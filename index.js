@@ -9,6 +9,11 @@ const port = process.env.PORT;
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
+
+app.get("/generate", (req, res) => {
+  res.send(history);
+});
+
 const bodyParser = require("body-parser");
 const { generateResponse } = require("./controllers/index.js");
 
