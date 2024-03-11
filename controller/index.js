@@ -10,3 +10,4 @@ const configuration = new GoogleGenerativeAI(process.env.API_KEY);
 const modelId = "gemini-pro";
 const model = configuration.getGenerativeModel({ model: modelId });
 
+export const history = [];
